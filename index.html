@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jhon Camilo Vásquez — Agentes de IA financieros</title>
+<meta name="description" content="Contador Público que construye agentes de IA y plataformas financieras con Claude. Public Accountant who builds AI agents and financial platforms with Claude.">
+<style>
+:root{--ink:#0f1f2e;--mute:#52606d;--line:#dde3ea;--bg:#f7f9fb;--card:#fff;--acc:#0b6e7f;--acc2:#e6f3f5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,#0b3c49,#0b6e7f);color:#fff}
+.top{display:flex;justify-content:flex-end;padding-top:14px}
+.lang button{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5);padding:4px 12px;border-radius:999px;cursor:pointer;font:inherit;font-size:14px}
+.lang button.on{background:#fff;color:#0b3c49}
+.hero{display:flex;gap:28px;align-items:center;padding:28px 0 56px;flex-wrap:wrap}
+.hero img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,.85)}
+.hero h1{margin:0;font-size:34px;line-height:1.15}
+.hero .role{margin:6px 0 12px;font-size:19px;opacity:.95}
+.hero p{margin:0 0 16px;max-width:640px;opacity:.95}
+.btn{display:inline-block;background:#fff;color:#0b3c49;padding:9px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin-right:8px}
+section{padding:44px 0}
+h2{font-size:26px;margin:0 0 6px}
+.sub{color:var(--mute);margin:0 0 24px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{margin:0 0 4px;font-size:19px}
+.tag{display:inline-block;font-size:12px;font-weight:600;color:var(--acc);background:var(--acc2);border-radius:999px;padding:2px 10px;margin-bottom:10px}
+.card p{margin:8px 0}
+.k{font-weight:600}
+ul{margin:8px 0 8px 18px;padding:0}
+li{margin:3px 0}
+.chips span{display:inline-block;background:#eef2f6;border-radius:6px;padding:3px 9px;margin:3px 4px 0 0;font-size:13px}
+.proj{margin-bottom:20px}
+.proj .cols{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:8px}
+.num{font-size:26px;font-weight:700;color:var(--acc);line-height:1.1}
+.stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));margin:12px 0}
+.stat{background:var(--acc2);border-radius:10px;padding:10px 12px}
+.stat small{display:block;color:var(--mute);line-height:1.3}
+.steps{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));counter-reset:s}
+.steps div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;font-size:14px}
+.steps div::before{counter-increment:s;content:counter(s);display:block;font-weight:700;color:var(--acc);font-size:20px}
+.note{background:#fff8e6;border:1px solid #f2dc9b;border-radius:10px;padding:12px 16px;font-size:14px}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-size:14px}
+[data-l]{display:none}
+html[lang="es"] [data-l="es"],html[lang="en"] [data-l="en"]{display:revert}
+html[lang="es"] span[data-l="es"],html[lang="en"] span[data-l="en"]{display:inline}
+@media(max-width:600px){.hero h1{font-size:28px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="top"><div class="lang"><button id="bes" onclick="setLang('es')">ES</button> <button id="ben" onclick="setLang('en')">EN</button></div></div>
+  <div class="hero">
+   <img src="assets/jhon.jpg" alt="Jhon Camilo Vásquez">
+   <div>
+    <h1>Jhon Camilo Vásquez</h1>
+    <div class="role"><span data-l="es">Contador Público · Agentes de IA financieros con Claude</span><span data-l="en">Public Accountant · Financial AI agents with Claude</span></div>
+    <p data-l="es">Construyo agentes de IA y plataformas con dashboards que hacen trabajo financiero y contable real: leer estados financieros, calcular indicadores, cobrar cartera y controlar proyectos. Primero el plan y los criterios de calidad, después el código.</p>
+    <p data-l="en">I build AI agents and dashboard platforms that do real finance and accounting work: reading financial statements, calculating indicators, collecting receivables and controlling projects. First the plan and the quality criteria, then the code.</p>
+    <a class="btn" href="https://github.com/jvasquez9729">GitHub</a><a class="btn" href="#proyectos"><span data-l="es">Ver proyectos</span><span data-l="en">See projects</span></a>
+   </div>
+  </div>
+ </div>
+</header>
+
+<main class="wrap">
+<section>
+ <h2><span data-l="es">Qué hago</span><span data-l="en">What I do</span></h2>
+ <p class="sub"><span data-l="es">Tres frentes, todos en producción o con diseño aprobado.</span><span data-l="en">Three areas, all in production or with an approved design.</span></p>
+ <div class="grid">
+  <div class="card"><span class="tag">AI AGENTS</span><h3><span data-l="es">Agentes con Claude</span><span data-l="en">Agents with Claude</span></h3>
+   <p data-l="es">Agentes que extraen cifras de PDF y Excel, las validan con código y redactan el análisis. El cálculo no lo hace el modelo: lo hace una función con prueba.</p>
+   <p data-l="en">Agents that extract figures from PDF and Excel, validate them with code and write the analysis. The model does not do the math: a tested function does it.</p></div>
+  <div class="card"><span class="tag">DASHBOARDS</span><h3><span data-l="es">Plataformas con KPIs</span><span data-l="en">Platforms with KPIs</span></h3>
+   <p data-l="es">Aplicaciones web con indicadores, proyecciones, presupuesto y alertas, conectadas a las hojas y sistemas que la gente ya usa.</p>
+   <p data-l="en">Web applications with indicators, projections, budgets and alerts, connected to the spreadsheets and systems people already use.</p></div>
+  <div class="card"><span class="tag">QUALITY</span><h3><span data-l="es">Calidad y seguridad</span><span data-l="en">Quality and security</span></h3>
+   <p data-l="es">Plan escrito, criterios de aceptación antes de probar, pruebas automáticas y revisión por agentes de seguridad, rendimiento y mantenibilidad.</p>
+   <p data-l="en">Written plan, acceptance criteria before testing, automated tests and review by security, performance and maintainability agents.</p></div>
+ </div>
+</section>
+
+<section id="proyectos">
+ <h2><span data-l="es">Proyectos</span><span data-l="en">Projects</span></h2>
+ <p class="sub"><span data-l="es">Casos de estudio. El código y los datos reales son de clientes y no se publican; las capturas usan datos ficticios.</span><span data-l="en">Case studies. The real code and data belong to clients and are not published; screenshots use fictional data.</span></p>
+
+ <div class="card proj"><span class="tag">AGENT · PRODUCTION</span>
+  <h3><span data-l="es">Agente de análisis financiero para pymes</span><span data-l="en">Financial analysis agent for SMEs</span></h3>
+  <p data-l="es"><span class="k">Problema.</span> Los analistas gastaban horas leyendo estados financieros (PDF nativos, escaneados y Excel) para sacar indicadores y redactar un diagnóstico.</p>
+  <p data-l="en"><span class="k">Problem.</span> Analysts spent hours reading financial statements (native PDF, scanned and Excel) to get indicators and write a diagnosis.</p>
+  <div class="stats"><div class="stat"><span class="num">22</span><small><span data-l="es">indicadores con diferencia por sector</span><span data-l="en">indicators, adjusted by sector</span></small></div><div class="stat"><span class="num">PDF + OCR</span><small><span data-l="es">español e inglés</span><span data-l="en">Spanish and English</span></small></div><div class="stat"><span class="num">Word + Excel</span><small><span data-l="es">reporte y consolidado</span><span data-l="en">report and consolidation</span></small></div></div>
+  <div class="cols">
+   <div><span class="k"><span data-l="es">Qué hice</span><span data-l="en">What I did</span></span><ul data-l="es"><li>Extracción de cifras con OCR y validación de que los estados cuadren.</li><li>Cálculo de indicadores en código, con compuertas de calidad de datos.</li><li>Análisis redactado por el modelo, citando las cifras.</li></ul><ul data-l="en"><li>Figure extraction with OCR and checks that the statements balance.</li><li>Indicators calculated in code, with data-quality gates.</li><li>Analysis written by the model, citing the figures.</li></ul></div>
+   <div><span class="k"><span data-l="es">Resultado</span><span data-l="en">Result</span></span><ul data-l="es"><li>En uso por analistas reales con carpetas reales de empresas.</li><li>Encontré y corregí 3 causas raíz con casos reales (nombre de empresa, margen operacional, PDF con relleno de espacios).</li></ul><ul data-l="en"><li>Used by real analysts with real company folders.</li><li>Found and fixed 3 root causes using real cases (company name, operating margin, PDF with padded spaces).</li></ul></div>
+  </div>
+  <div class="chips"><span>Python</span><span>FastAPI</span><span>Claude API</span><span>OCR</span><span>n8n</span></div>
+ </div>
+
+ <div class="card proj"><span class="tag">AGENT · QA-FIRST</span>
+  <h3><span data-l="es">Agente analista de estados financieros</span><span data-l="en">Financial statements analyst agent</span></h3>
+  <p data-l="es"><span class="k">Idea central.</span> El agente nunca afirma una causa que no puede probar. Dice qué se movió y cuánto, qué hipótesis son consistentes y qué documento la resolvería. El cálculo es código con referencia independiente; el modelo solo extrae y redacta citando cifras.</p>
+  <p data-l="en"><span class="k">Core idea.</span> The agent never states a cause it cannot prove. It says what moved and by how much, which hypotheses fit, and which document would settle it. The math is code with an independent reference; the model only extracts and writes, citing figures.</p>
+  <p data-l="es">Plan y criterios de aceptación escritos antes de la primera prueba.</p><p data-l="en">Plan and acceptance criteria written before the first test.</p>
+  <div class="chips"><span>Python</span><span>Claude API</span><span>Excel / Word</span></div>
+ </div>
+
+ <div class="card proj"><span class="tag">AGENT · TAX</span>
+  <h3><span data-l="es">Agente tributario: renta de persona natural (Colombia)</span><span data-l="en">Tax agent: personal income tax (Colombia)</span></h3>
+  <p data-l="es">Asesora, calcula y prepara borradores de declaración dentro del marco legal, con normativa versionada, vigilancia web de cambios y memoria por agente. Entrega en Excel y Word.</p>
+  <p data-l="en">Advises, calculates and prepares draft tax returns within the legal framework, with versioned regulations, web monitoring of changes and per-agent memory. Output in Excel and Word.</p>
+  <div class="chips"><span>Claude Code subagent</span><span>Python</span><span>Excel / Word</span></div>
+ </div>
+
+ <div class="card proj"><span class="tag">SaaS · MULTI-TENANT</span>
+  <h3><span data-l="es">ContIA: reportes financieros y KPIs para pymes</span><span data-l="en">ContIA: financial reports and KPIs for SMEs</span></h3>
+  <p data-l="es"><span class="k">Qué es.</span> Producto SaaS que reutiliza tres sistemas propios: un backend multi-tenant (aislamiento por empresa en el código y en la base de datos, probado con pruebas de ataque), un motor de KPIs y los agentes financieros. Desarrollado junto con un socio.</p>
+  <p data-l="en"><span class="k">What it is.</span> A SaaS product that reuses three of my own systems: a multi-tenant backend (per-company isolation in code and in the database, tested with attack tests), a KPI engine and the financial agents. Built together with a partner.</p>
+  <div class="stats"><div class="stat"><span class="num">9</span><small><span data-l="es">KPIs en producción (DuPont y eficiencia)</span><span data-l="en">KPIs in production (DuPont and efficiency)</span></small></div><div class="stat"><span class="num">24</span><small><span data-l="es">decisiones en el diseño de API y MCP</span><span data-l="en">decisions in the API and MCP design</span></small></div><div class="stat"><span class="num">16</span><small><span data-l="es">criterios de aceptación pre-registrados</span><span data-l="en">pre-registered acceptance criteria</span></small></div></div>
+  <p data-l="es"><span class="k">Diseño de API pública y servidor MCP:</span> solo lectura, claves con hash que vencen, límites de uso y empresa de demostración con datos ficticios. <em>Estado: diseño aprobado, todavía no construido.</em></p>
+  <p data-l="en"><span class="k">Public API and MCP server design:</span> read-only, hashed keys that expire, usage limits and a demo company with fictional data. <em>Status: design approved, not built yet.</em></p>
+  <div class="chips"><span>FastAPI</span><span>Next.js</span><span>Postgres + RLS</span><span>Docker</span><span>MCP</span></div>
+ </div>
+
+ <div class="card proj"><span class="tag">DASHBOARDS · KPIs</span>
+  <h3><span data-l="es">Plataforma financiera para una consultora de proyectos</span><span data-l="en">Financial platform for a project consulting firm</span></h3>
+  <p data-l="es"><span class="k">Problema.</span> La información financiera vivía en una hoja manual: sin vista por proyecto ni proyecciones.</p>
+  <p data-l="en"><span class="k">Problem.</span> Financial information lived in a manual spreadsheet: no per-project view and no projections.</p>
+  <div class="cols">
+   <div><span class="k"><span data-l="es">Qué hice</span><span data-l="en">What I did</span></span><ul data-l="es"><li>Sincronización automática con la hoja de la contadora, con panel de revisión.</li><li>Estado de resultados por proyecto, flujo causado vs. cobrado, presupuesto por rubro y proyecciones.</li><li>Plan de trabajo con KPIs de avance: curva S y semáforos.</li></ul><ul data-l="en"><li>Automatic sync with the accountant's spreadsheet, with a review panel.</li><li>Income statement per project, accrued vs. collected cash flow, budget by item and projections.</li><li>Work plan with progress KPIs: S-curve and traffic lights.</li></ul></div>
+   <div><span class="k"><span data-l="es">Entrega reciente</span><span data-l="en">Recent delivery</span></span><ul data-l="es"><li>Cargué un plan estandarizado donde parte de las actividades son de terceros: 42 de 90 actividades clasificadas y valor total exacto al contrato.</li><li>712 pruebas unitarias y 81 de integración.</li><li>Revisión en paralelo por 3 agentes (seguridad, rendimiento, mantenibilidad) y PR para despliegue.</li></ul><ul data-l="en"><li>Loaded a standard plan where part of the activities belong to third parties: 42 of 90 activities classified and total value exactly equal to the contract.</li><li>712 unit tests and 81 integration tests.</li><li>Parallel review by 3 agents (security, performance, maintainability) and a pull request for deployment.</li></ul></div>
+  </div>
+  <div class="chips"><span>Next.js</span><span>PostgreSQL</span><span>Apps Script</span><span>Python</span><span>Migrations</span></div>
+ </div>
+
+ <div class="card proj"><span class="tag">AUTOMATION · HEALTH</span>
+  <h3><span data-l="es">Cobro de cartera en el sector salud</span><span data-l="en">Receivables collection in healthcare</span></h3>
+  <p data-l="es"><span class="k">Problema.</span> Cobrar a decenas de EPS desde un reporte crudo de 116.524 filas, sin correos, de forma manual y con errores.</p>
+  <p data-l="en"><span class="k">Problem.</span> Collecting from dozens of health insurers from a raw report of 116,524 rows, without emails, by hand and with errors.</p>
+  <div class="stats"><div class="stat"><span class="num">62/62</span><small><span data-l="es">entidades iguales al peso vs. el cálculo manual</span><span data-l="en">entities matching to the peso vs. the manual calculation</span></small></div><div class="stat"><span class="num">0</span><small><span data-l="es">diferencias en 14 campos</span><span data-l="en">differences in 14 fields</span></small></div><div class="stat"><span class="num">93</span><small><span data-l="es">pruebas automáticas</span><span data-l="en">automated tests</span></small></div></div>
+  <p data-l="es">Armé el reporte «cartera a reportar» (una fila por entidad), valido el archivo maestro y preparo borradores de cobro con pantalla de revisión. En el camino detecté defectos reales de datos: pares +/− entre cuentas y NIT repetidos entre entidades.</p>
+  <p data-l="en">I build the "receivables to report" file (one row per entity), validate the master file and prepare collection drafts with a review screen. Along the way I found real data defects: +/− pairs between accounts and tax IDs repeated across entities.</p>
+  <div class="chips"><span>Next.js</span><span>FastAPI</span><span>Python / pandas</span><span>Google Drive API</span></div>
+ </div>
+</section>
+
+<section id="ecosistema">
+ <h2><span data-l="es">Mi forma de trabajar con agentes</span><span data-l="en">How I work with agents</span></h2>
+ <p class="sub"><span data-l="es">Más de 20 agentes especializados con memoria persistente, y un flujo obligatorio antes de construir.</span><span data-l="en">More than 20 specialized agents with persistent memory, and a mandatory flow before building.</span></p>
+ <div class="steps">
+  <div><span data-l="es">Plan escrito</span><span data-l="en">Written plan</span></div>
+  <div><span data-l="es">Criterios de aceptación fijados antes de probar</span><span data-l="en">Acceptance criteria set before testing</span></div>
+  <div><span data-l="es">Datos de verdad conocida y casos trampa</span><span data-l="en">Known-truth data and tricky cases</span></div>
+  <div><span data-l="es">Análisis de cada error</span><span data-l="en">Analysis of every error</span></div>
+  <div><span data-l="es">Informe QA: si no pasa, no se construye</span><span data-l="en">QA report: if it fails, nothing is built</span></div>
+ </div>
+ <p data-l="es" style="margin-top:16px">Los cambios importantes los revisan tres agentes en paralelo (seguridad, rendimiento, mantenibilidad) y un orquestador da un veredicto combinado que bloquea si falta algún informe. Hay reglas contra exponer secretos, respaldo antes de desplegar y confirmación antes de acciones irreversibles.</p>
+ <p data-l="en" style="margin-top:16px">Important changes are reviewed by three agents in parallel (security, performance, maintainability) and an orchestrator gives a combined verdict that blocks if any report is missing. There are rules against exposing secrets, backups before deploying and confirmation before irreversible actions.</p>
+ <p class="note" data-l="es">Automatización: n8n con MCP conectado a Claude Code y a los agentes, y un servicio de despliegue con rollback automático si falla la verificación de salud.</p>
+ <p class="note" data-l="en">Automation: n8n with MCP connected to Claude Code and to the agents, and a deployment service with automatic rollback if the health check fails.</p>
+</section>
+
+<section>
+ <h2><span data-l="es">Herramientas</span><span data-l="en">Tools</span></h2>
+ <div class="chips"><span>Claude / Claude Code</span><span>MCP</span><span>LangGraph</span><span>Python</span><span>FastAPI</span><span>Next.js</span><span>PostgreSQL / Supabase</span><span>n8n</span><span>Docker</span><span>OCR</span><span>pytest</span><span>Git / GitHub</span></div>
+ <p class="sub" style="margin-top:14px"><span data-l="es">Inglés: B1 (técnico). Disposición para aprender Microsoft Copilot y herramientas de BI como Power BI.</span><span data-l="en">English: B1 (technical). Willing to learn Microsoft Copilot and BI tools such as Power BI.</span></p>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span data-l="es">© Jhon Camilo Vásquez. Todos los derechos reservados. Los datos y capturas son ficticios; el código de los proyectos pertenece a sus dueños y no se publica.</span>
+  <span data-l="en">© Jhon Camilo Vásquez. All rights reserved. Data and screenshots are fictional; the projects' code belongs to their owners and is not published.</span>
+  · <a href="https://github.com/jvasquez9729">github.com/jvasquez9729</a>
+ </div>
+</footer>
+
+<script>
+function setLang(l){
+  document.documentElement.lang=l;
+  document.getElementById('bes').className=l==='es'?'on':'';
+  document.getElementById('ben').className=l==='en'?'on':'';
+  try{localStorage.setItem('lang',l)}catch(e){}
+}
+var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+setLang(saved||((navigator.language||'es').toLowerCase().startsWith('en')?'en':'es'));
+</script>
+</body>
+</html>
