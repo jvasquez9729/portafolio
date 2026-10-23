@@ -6,7 +6,15 @@ Soy contador público y empecé en el trabajo de todos los días: contabilidad, 
 
 Por eso construyo las herramientas que resuelven eso. Hoy trabajo con SQL, Python y agentes de IA para automatizar lo repetitivo, validar los datos antes de confiar en ellos y dejar dashboards que la gente sí usa. Me interesa que el resultado se pueda auditar: que se sepa de dónde sale cada cifra y cómo se comprobó.
 
-**Lo siguiente es el aprendizaje automático.** Estoy empezando a entrenar modelos de machine learning sobre datos financieros y contables (por ejemplo, detección de anomalías y clasificación de movimientos), aplicando la misma disciplina de medición que ya uso con los agentes. Todavía no tengo un proyecto terminado en esto y prefiero decirlo así.
+**Mi siguiente frente es el aprendizaje automático.** Estoy desarrollando modelos de machine learning para datos financieros y contables, con la misma disciplina de medición que ya aplico a los agentes: criterios fijados de antemano, datos de verdad conocida y evaluación honesta. Los modelos en los que trabajo, y para qué sirve cada uno (estado: *planeado*, *en curso* o *entrenado con resultados*; hoy todos están en *planeado*, empezando por la detección de anomalías):
+
+- **Regresión lineal y regularizada (Ridge, Lasso):** explicar y proyectar rubros (ingresos, costos, recaudo) a partir de sus drivers, y medir cuánto pesa cada uno en el margen.
+- **Regresión logística:** estimar la probabilidad de que una factura o una entidad pague tarde o caiga en mora, para priorizar el cobro.
+- **Árboles y *gradient boosting* (Random Forest, XGBoost):** predecir recaudo y mora con datos tabulares, y clasificar movimientos contables en su cuenta del plan de cuentas.
+- **Detección de anomalías (Isolation Forest, puntajes robustos):** encontrar asientos, facturas o conciliaciones atípicos: duplicados, montos fuera de patrón, pares +/− que no deberían estar.
+- **Series de tiempo (ETS, ARIMA):** proyectar flujo de caja y ventas con su estacionalidad.
+- **Agrupamiento (K-means):** segmentar clientes o EPS por comportamiento de pago.
+- **Clasificación de texto (TF-IDF + modelo lineal):** categorizar descripciones de movimientos y glosas.
 
 ## Cómo trabajo
 
@@ -27,7 +35,15 @@ I'm a public accountant, and I started in the day-to-day work: accounting, taxes
 
 So I build the tools that fix that. Today I work with SQL, Python and AI agents to automate the repetitive parts, validate data before trusting it, and ship dashboards people actually use. I care about results that can be audited: knowing where every figure comes from and how it was checked.
 
-**Next up is machine learning.** I'm starting to train machine learning models on financial and accounting data (for example, anomaly detection and transaction classification), applying the same measurement discipline I already use with agents. I don't have a finished project in this yet, and I'd rather say so.
+**My next front is machine learning.** I'm developing machine learning models for financial and accounting data, with the same measurement discipline I already apply to agents: criteria set in advance, known-truth data and honest evaluation. The models I'm working on, and what each is for (status: *planned*, *in progress* or *trained with results*; today all are *planned*, starting with anomaly detection):
+
+- **Linear and regularized regression (Ridge, Lasso):** explain and forecast line items (revenue, costs, collections) from their drivers, and measure how much each one weighs on margin.
+- **Logistic regression:** estimate the probability that an invoice or an entity pays late or defaults, to prioritize collection.
+- **Trees and gradient boosting (Random Forest, XGBoost):** predict collections and delinquency from tabular data, and classify accounting entries into their chart-of-accounts code.
+- **Anomaly detection (Isolation Forest, robust scores):** find unusual entries, invoices or reconciliations: duplicates, out-of-pattern amounts, +/− pairs that shouldn't be there.
+- **Time series (ETS, ARIMA):** forecast cash flow and sales with seasonality.
+- **Clustering (K-means):** segment customers or insurers by payment behavior.
+- **Text classification (TF-IDF + linear model):** categorize transaction descriptions and audit notes.
 
 ## How I work
 
@@ -48,11 +64,30 @@ In practice: receivables collection matches the manual calculation to the peso i
 |---|---|---|
 | **ContIA** | SaaS multi-tenant de reportes financieros y KPIs para pymes | 9 KPIs en producción (DuPont y eficiencia); aislamiento por empresa probado con pruebas de ataque |
 | **Cobro de cartera (salud)** · *Healthcare receivables* | Cobro a decenas de EPS desde un reporte de 116.524 filas | 62/62 entidades iguales al peso frente al cálculo manual |
-| **Agente analista de EEFF** · *Financial statements agent* | Analiza estados financieros sin afirmar causas que no puede probar | 16 criterios de aceptación pre-registrados |
+| **Agentes de análisis financiero** · *Financial analysis agents* | Extraen, validan y analizan estados financieros; otros agentes auditan el resultado | 16 criterios de aceptación pre-registrados en el agente analista |
 | **Agente tributario** · *Tax agent* | Borradores de renta de persona natural (Colombia) con normativa versionada | Entrega en Excel y Word |
 | **Plataforma para consultora** · *Consulting-firm platform* | Estado de resultados y flujo por proyecto, con proyecciones | Sincronización automática con la hoja contable |
 
 **Stack:** Python · FastAPI · Next.js · PostgreSQL · Claude API · MCP · n8n · Docker
+
+## Agentes que he construido · Agents I've built
+
+No es un solo agente: es un equipo, cada uno con un rol acotado y memoria propia.
+
+**Análisis financiero**
+- **Analista de estados financieros:** lee imágenes, PDF y Excel, verifica que el balance cuadre, calcula márgenes y razones, arma el puente de márgenes y detecta anomalías. Nunca afirma una causa que no pueda probar: dice qué se movió, cuánto y qué documento lo resolvería. Entrega en Excel y Word.
+- **Pipeline de tres capas para documentos financieros:** extracción del contenido, razonamiento con IA para identificar las cifras y *compuertas* en Python que validan los números antes de aceptarlos.
+- **Agente de análisis sobre plan de cuentas (PUC):** extrae y analiza estados financieros de PDF para empresas colombianas.
+- **Controller financiero (FP&A):** presupuestos, proyecciones, análisis de variaciones y flujo de caja.
+
+**Tributario**
+- **Agente de renta de persona natural (Colombia):** calcula y prepara borradores con normativa versionada y vigilancia web de cambios.
+
+**Auditoría y control**
+- **Tres revisores independientes** (seguridad, rendimiento y mantenibilidad) que auditan cada cambio importante, y un **orquestador** que emite un veredicto combinado: si falta un informe, bloquea.
+- **Revisor de seguridad fintech:** aislamiento multi-tenant, cifrado, manejo de secretos y cumplimiento de Habeas Data (Ley 1581 de 2012).
+
+*Multiple agents, each with a narrow role and its own memory.* **Financial analysis:** a statements analyst that never asserts a cause it can't prove; a three-layer pipeline (extraction, AI reasoning, Python validation gates); a chart-of-accounts analyst for Colombian companies; and an FP&A controller. **Tax:** a personal income tax agent with versioned regulations and web monitoring. **Audit and control:** three independent reviewers (security, performance, maintainability) plus an orchestrator that issues a fail-closed verdict, and a fintech security reviewer covering multi-tenancy, encryption, secrets and Colombian data-protection law.
 
 ## Privacidad · Privacy
 
