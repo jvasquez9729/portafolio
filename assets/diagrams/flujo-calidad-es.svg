@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 445" role="img" aria-label="Flujo de calidad antes de construir" font-family="Inter,'Segoe UI',system-ui,sans-serif"><title>Flujo de calidad antes de construir</title><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#52606d"/></marker></defs><rect width="1000" height="445" fill="#ffffff"/><text x="500" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f1f2e">Flujo de calidad antes de construir</text>
+<rect x="22" y="60" width="140" height="92" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="92.0" y="110.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Plan escrito</text>
+<rect x="188" y="60" width="140" height="92" rx="12" fill="#e6f3f5" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="258.0" y="92.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Criterios</text>
+<text x="258.0" y="112.0" text-anchor="middle" font-size="12" fill="#52606d">fijados antes de</text>
+<text x="258.0" y="128.0" text-anchor="middle" font-size="12" fill="#52606d">probar</text>
+<line x1="164" y1="106.0" x2="186" y2="106.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="354" y="60" width="140" height="92" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="424.0" y="92.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Datos de</text>
+<text x="424.0" y="112.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e"> verdad conocida</text>
+<text x="424.0" y="132.0" text-anchor="middle" font-size="12" fill="#52606d">con casos trampa</text>
+<line x1="330" y1="106.0" x2="352" y2="106.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="520" y="60" width="140" height="92" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="590.0" y="101.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Pruebas</text>
+<text x="590.0" y="121.0" text-anchor="middle" font-size="12" fill="#52606d">≥ 100 corridas</text>
+<line x1="496" y1="106.0" x2="518" y2="106.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="686" y="60" width="140" height="92" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="756.0" y="83.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Análisis</text>
+<text x="756.0" y="103.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e"> de errores</text>
+<text x="756.0" y="123.0" text-anchor="middle" font-size="12" fill="#52606d">cada fallo</text>
+<text x="756.0" y="139.0" text-anchor="middle" font-size="12" fill="#52606d">clasificado</text>
+<line x1="662" y1="106.0" x2="684" y2="106.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="852" y="60" width="140" height="92" rx="12" fill="#0b6e7f" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="922.0" y="92.0" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Informe QA</text>
+<text x="922.0" y="112.0" text-anchor="middle" font-size="12" fill="#d7eef2">si no pasa, no se</text>
+<text x="922.0" y="128.0" text-anchor="middle" font-size="12" fill="#d7eef2">construye</text>
+<line x1="828" y1="106.0" x2="850" y2="106.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="22" y1="196" x2="978" y2="196" stroke="#c9d3dc" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="500" y="226" text-anchor="middle" font-size="15" font-weight="700" fill="#0b6e7f">Revisión en paralelo antes de publicar</text>
+<rect x="150" y="246" width="200" height="56" rx="12" fill="#e6f3f5" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="250.0" y="278.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Seguridad</text>
+<line x1="250" y1="304" x2="500" y2="334" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="390" y="246" width="200" height="56" rx="12" fill="#e6f3f5" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="490.0" y="278.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Rendimiento</text>
+<line x1="490" y1="304" x2="500" y2="334" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="630" y="246" width="200" height="56" rx="12" fill="#e6f3f5" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="730.0" y="278.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Mantenibilidad</text>
+<line x1="730" y1="304" x2="500" y2="334" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="380" y="336" width="240" height="72" rx="12" fill="#0b6e7f" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="500.0" y="367.0" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Orquestador</text>
+<text x="500.0" y="387.0" text-anchor="middle" font-size="12" fill="#d7eef2">si falta un informe, bloquea</text>
+<text x="500" y="428" text-anchor="middle" font-size="13" font-weight="500" fill="#52606d">Veredicto combinado</text></svg>

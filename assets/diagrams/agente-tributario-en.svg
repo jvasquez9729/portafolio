@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-label="Tax agent flow" font-family="Inter,'Segoe UI',system-ui,sans-serif"><title>Tax agent flow</title><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#52606d"/></marker></defs><rect width="1000" height="300" fill="#ffffff"/><text x="500" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f1f2e">Tax agent flow</text>
+<rect x="70" y="70" width="150" height="92" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="145.0" y="102.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Taxpayer</text>
+<text x="145.0" y="122.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e"> data</text>
+<text x="145.0" y="142.0" text-anchor="middle" font-size="12" fill="#52606d">income · withholdings</text>
+<rect x="256" y="70" width="150" height="92" rx="12" fill="#e6f3f5" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="331.0" y="102.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Current</text>
+<text x="331.0" y="122.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e"> regulations</text>
+<text x="331.0" y="142.0" text-anchor="middle" font-size="12" fill="#52606d">versioned document</text>
+<line x1="222" y1="116.0" x2="254" y2="116.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="442" y="70" width="150" height="92" rx="12" fill="#0b6e7f" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="517.0" y="102.0" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Calculation by</text>
+<text x="517.0" y="122.0" text-anchor="middle" font-size="14" font-weight="500" fill="#ffffff"> income schedule</text>
+<text x="517.0" y="142.0" text-anchor="middle" font-size="12" fill="#d7eef2">personal income tax</text>
+<line x1="408" y1="116.0" x2="440" y2="116.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="628" y="70" width="150" height="92" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="703.0" y="111.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Draft</text>
+<text x="703.0" y="131.0" text-anchor="middle" font-size="12" fill="#52606d">Excel + Word</text>
+<line x1="594" y1="116.0" x2="626" y2="116.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="814" y="70" width="150" height="92" rx="12" fill="#fff8e6" stroke="#f2dc9b" stroke-width="1.6"/>
+<text x="889.0" y="93.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Accountant</text>
+<text x="889.0" y="113.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e"> review</text>
+<text x="889.0" y="133.0" text-anchor="middle" font-size="12" fill="#52606d">final decision is</text>
+<text x="889.0" y="149.0" text-anchor="middle" font-size="12" fill="#52606d">human</text>
+<line x1="780" y1="116.0" x2="812" y2="116.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M70 180 v10 h894 v-10" fill="none" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="517.0" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#0b6e7f">Web monitoring of regulation changes</text>
+<text x="500" y="262" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e">Current legal framework and legal tax planning.</text></svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 432" role="img" aria-label="ContIA architecture" font-family="Inter,'Segoe UI',system-ui,sans-serif"><title>ContIA architecture</title><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#52606d"/></marker></defs><rect width="1000" height="432" fill="#ffffff"/><text x="500" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f1f2e">ContIA architecture (multi-tenant)</text>
+<rect x="30" y="90" width="170" height="80" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="115.0" y="125.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Accountants</text>
+<text x="115.0" y="145.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e">and SMEs</text>
+<rect x="250" y="90" width="170" height="80" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="335.0" y="125.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Web app</text>
+<text x="335.0" y="145.0" text-anchor="middle" font-size="12" fill="#52606d">Next.js</text>
+<rect x="470" y="70" width="230" height="120" rx="12" fill="#0b6e7f" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="585.0" y="125.0" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Backend FastAPI</text>
+<text x="585.0" y="145.0" text-anchor="middle" font-size="12" fill="#d7eef2">authentication · usage limits</text>
+<rect x="750" y="70" width="220" height="56" rx="12" fill="#e6f3f5" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="860.0" y="93.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">PostgreSQL</text>
+<text x="860.0" y="113.0" text-anchor="middle" font-size="12" fill="#52606d">per-company isolation (RLS)</text>
+<rect x="750" y="134" width="220" height="56" rx="12" fill="#e6f3f5" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="860.0" y="157.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Isolation in code</text>
+<text x="860.0" y="177.0" text-anchor="middle" font-size="12" fill="#52606d">tested with attack tests</text>
+<line x1="200" y1="130" x2="248" y2="130" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="420" y1="130" x2="468" y2="130" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="700" y1="98" x2="748" y2="98" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="700" y1="162" x2="748" y2="162" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="130" y="214" width="760" height="112" rx="14" fill="none" stroke="#0b6e7f" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="146" y="234" text-anchor="start" font-size="13" font-weight="700" fill="#0b6e7f">Backend modules</text>
+<rect x="146" y="246" width="168" height="66" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="230.0" y="274.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">KPI engine</text>
+<text x="230.0" y="294.0" text-anchor="middle" font-size="12" fill="#52606d">9 in production</text>
+<rect x="331" y="246" width="168" height="66" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="415.0" y="274.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Analysis agent</text>
+<text x="415.0" y="294.0" text-anchor="middle" font-size="12" fill="#52606d">financial</text>
+<rect x="516" y="246" width="168" height="66" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="600.0" y="274.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Tax agent</text>
+<text x="600.0" y="294.0" text-anchor="middle" font-size="12" fill="#52606d">personal income</text>
+<rect x="701" y="246" width="168" height="66" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="785.0" y="274.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Balance upload</text>
+<text x="785.0" y="294.0" text-anchor="middle" font-size="12" fill="#52606d">PDF · Excel</text>
+<line x1="585" y1="192" x2="585" y2="212" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<text x="500" y="358" text-anchor="middle" font-size="14" font-weight="700" fill="#b45309">Approved design, not built yet</text>
+<rect x="250" y="366" width="220" height="48" rx="12" fill="#fff8e6" stroke="#f2dc9b" stroke-width="1.6"/>
+<text x="360.0" y="394.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Public API (read-only)</text>
+<rect x="530" y="366" width="220" height="48" rx="12" fill="#fff8e6" stroke="#f2dc9b" stroke-width="1.6"/>
+<text x="640.0" y="394.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">MCP server</text>
+<line x1="470" y1="390" x2="528" y2="390" stroke="#52606d" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar)"/></svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" role="img" aria-label="Financial platform for a consulting firm" font-family="Inter,'Segoe UI',system-ui,sans-serif"><title>Financial platform for a consulting firm</title><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#52606d"/></marker></defs><rect width="1000" height="400" fill="#ffffff"/><text x="500" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0f1f2e">Financial platform for a project consulting firm</text>
+<rect x="24" y="66" width="170" height="92" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="109.0" y="98.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Accountant's</text>
+<text x="109.0" y="118.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e">spreadsheet</text>
+<text x="109.0" y="138.0" text-anchor="middle" font-size="12" fill="#52606d">source of truth</text>
+<rect x="222" y="66" width="170" height="92" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="307.0" y="107.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Apps Script</text>
+<text x="307.0" y="127.0" text-anchor="middle" font-size="12" fill="#52606d">automatic push</text>
+<line x1="196" y1="112.0" x2="220" y2="112.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="420" y="66" width="170" height="92" rx="12" fill="#e6f3f5" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="505.0" y="98.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Sync API</text>
+<text x="505.0" y="118.0" text-anchor="middle" font-size="12" fill="#52606d">validates and maps</text>
+<text x="505.0" y="134.0" text-anchor="middle" font-size="12" fill="#52606d">columns</text>
+<line x1="394" y1="112.0" x2="418" y2="112.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="618" y="66" width="170" height="92" rx="12" fill="#fff8e6" stroke="#f2dc9b" stroke-width="1.6"/>
+<text x="703.0" y="107.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Review panel</text>
+<text x="703.0" y="127.0" text-anchor="middle" font-size="12" fill="#52606d">issues before applying</text>
+<line x1="592" y1="112.0" x2="616" y2="112.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="816" y="66" width="170" height="92" rx="12" fill="#0b6e7f" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="901.0" y="107.0" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">PostgreSQL</text>
+<text x="901.0" y="127.0" text-anchor="middle" font-size="12" fill="#d7eef2">versioned migrations</text>
+<line x1="790" y1="112.0" x2="814" y2="112.0" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="840" y1="164" x2="840" y2="196" stroke="#52606d" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="24" y1="204" x2="976" y2="204" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="24" y="198" text-anchor="start" font-size="15" font-weight="700" fill="#0b6e7f">Dashboards</text>
+<rect x="24" y="222" width="170" height="70" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="109.0" y="252.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Income statement</text>
+<text x="109.0" y="272.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e">per project</text>
+<rect x="222" y="222" width="170" height="70" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="307.0" y="252.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Accrued vs.</text>
+<text x="307.0" y="272.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e">collected cash flow</text>
+<rect x="420" y="222" width="170" height="70" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="505.0" y="252.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Budget</text>
+<text x="505.0" y="272.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e">by item</text>
+<rect x="618" y="222" width="170" height="70" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="703.0" y="252.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Projections</text>
+<text x="703.0" y="272.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e">per project</text>
+<rect x="816" y="222" width="170" height="70" rx="12" fill="#ffffff" stroke="#c9d3dc" stroke-width="1.6"/>
+<text x="901.0" y="252.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Work plan</text>
+<text x="901.0" y="272.0" text-anchor="middle" font-size="14" font-weight="500" fill="#0f1f2e">S-curve · traffic lights</text>
+<rect x="250" y="322" width="500" height="50" rx="12" fill="#e6f3f5" stroke="#0b6e7f" stroke-width="1.6"/>
+<text x="500.0" y="351.0" text-anchor="middle" font-size="14" font-weight="700" fill="#0f1f2e">Roles and permissions: a project lead sees only their projects</text></svg>
