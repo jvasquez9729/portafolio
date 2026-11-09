@@ -230,24 +230,42 @@
     "es": {
       "title": "Explicar cambios sin inventar causas.",
       "short": "Analista de estados financieros",
-      "status": "Estado por confirmar",
+      "status": "Construido y probado",
       "intro": "Un agente que distingue lo que dicen las cifras de lo que todavía requiere evidencia.",
       "problem": "Un cambio de margen no basta para afirmar una causa operativa o comercial.",
       "solution": "Lectura de resultados, balance, flujo y patrimonio; validación de consistencia, márgenes, puente de márgenes y anomalías. El cálculo usa una referencia independiente; el LLM extrae y redacta.",
-      "result": "El análisis identifica qué se movió, cuánto cambió, qué hipótesis son compatibles y qué documento permitiría resolverlas. Entregables previstos en Word y Excel.",
-      "limit": "El estado de construcción o pruebas está pendiente de confirmación. No se afirma uso en producción.",
-      "metrics": []
+      "result": "879 pruebas automatizadas contra criterios de aceptación fijados antes de medir. Sobre un corpus sintético con verdad conocida, la extracción acertó 9.480 de 9.480 cifras en 100 corridas, con salida idéntica entre repeticiones. Ante 34 preguntas adversariales que empujaban a afirmar una causa, el agente no emitió ninguna: siempre respondió qué documento la resolvería. Un verificador rechaza toda cifra que el documento no respalde. Entrega informe en Word y consolidado en Excel.",
+      "limit": "El corpus de prueba es sintético y limpio: no mide escaneos reales con sellos, notas al pie ni monedas mezcladas. Con imágenes muy degradadas el sistema no entrega cifras erradas, se detiene y lo informa. No se afirma uso en producción con clientes.",
+      "metrics": [
+        [
+          "879",
+          "pruebas automatizadas"
+        ],
+        [
+          "9.480 / 9.480",
+          "cifras extraídas sin error"
+        ]
+      ]
     },
     "en": {
       "title": "Explain changes without inventing causes.",
       "short": "Financial statement analyst",
-      "status": "Status to be confirmed",
+      "status": "Built and tested",
       "intro": "An agent that separates what the figures show from what still needs evidence.",
       "problem": "A margin change alone does not establish an operational or commercial cause.",
       "solution": "Reads income statements, balance sheets, cash flow and equity; checks consistency, margins, margin bridges and anomalies. Calculations use an independent reference; the LLM extracts and writes.",
-      "result": "The analysis identifies what moved, by how much, which hypotheses fit and which document would resolve them. Intended outputs are Word and Excel.",
-      "limit": "Build or testing status requires confirmation. No production use is claimed.",
-      "metrics": []
+      "result": "879 automated tests against acceptance criteria fixed before any measurement. On a synthetic corpus with known ground truth, extraction got 9,480 of 9,480 figures right across 100 runs, with identical output across repetitions. Asked 34 adversarial questions pushing it to assert a cause, it asserted none: it always answered which document would settle the question. A verifier rejects any figure the document does not support. Delivers a Word report and an Excel workbook.",
+      "limit": "The test corpus is synthetic and clean: it does not measure real scans with stamps, footnotes or mixed currencies. With heavily degraded images the system returns no figures rather than wrong ones, and says so. No client production use is claimed.",
+      "metrics": [
+        [
+          "879",
+          "automated tests"
+        ],
+        [
+          "9,480 / 9,480",
+          "figures extracted without error"
+        ]
+      ]
     },
     "images": []
   },
@@ -262,24 +280,42 @@
     "es": {
       "title": "Criterio tributario, revisión humana.",
       "short": "Agente de renta · Colombia",
-      "status": "Estado por confirmar",
+      "status": "Construido, sin uso en producción",
       "intro": "Asistencia para renta de persona natural con normativa versionada y borradores revisables.",
       "problem": "Preparar renta requiere mantener el contexto documental y controlar cambios normativos.",
       "solution": "Configuré un subagente de Claude Code para asesorar, calcular y preparar borradores bajo el sistema cedular colombiano, con vigilancia web de cambios y memoria por agente.",
-      "result": "Flujo orientado a entregables en Excel y Word, conservando revisión antes de presentar.",
-      "limit": "El estado de piloto o uso requiere confirmación. El portafolio describe el proyecto; no certifica cumplimiento ni sustituye revisión profesional.",
-      "metrics": []
+      "result": "Tres casos sintéticos verificados a mano, con el cálculo cedular correcto. El Estatuto Tributario completo queda consultable en local, con una revisión semanal automática que avisa cuando el texto cambia. Entregables en Excel y Word, conservando la revisión antes de presentar.",
+      "limit": "Verificado con casos sintéticos, no con declaraciones reales presentadas. La vigilancia normativa funciona, pero la fuente de la DIAN rinde poco porque su listado se construye por JavaScript. El portafolio describe el proyecto; no certifica cumplimiento ni sustituye la revisión profesional.",
+      "metrics": [
+        [
+          "3 / 3",
+          "casos sintéticos correctos"
+        ],
+        [
+          "Semanal",
+          "revisión de cambios normativos"
+        ]
+      ]
     },
     "en": {
       "title": "Tax reasoning, human review.",
       "short": "Income tax agent · Colombia",
-      "status": "Status to be confirmed",
+      "status": "Built, not in production use",
       "intro": "Personal income tax assistance with versioned regulations and reviewable drafts.",
       "problem": "Preparing a tax return requires document context and control over regulatory changes.",
       "solution": "I configured a Claude Code subagent to advise, calculate and prepare drafts under Colombia’s income-category system, with web monitoring of changes and per-agent memory.",
-      "result": "A workflow oriented to Excel and Word deliverables, retaining review before filing.",
-      "limit": "Pilot or usage status requires confirmation. This describes a project, not a compliance certification or a substitute for professional review.",
-      "metrics": []
+      "result": "Three synthetic cases verified by hand, with the income-category calculation correct. The full tax code is available locally, with an automatic weekly check that flags when the text changes. Excel and Word deliverables, keeping human review before filing.",
+      "limit": "Verified against synthetic cases, not against real filed returns. Regulatory monitoring works, but the tax authority's own source yields little because its listing is rendered by JavaScript. This describes a project; it is not a compliance certification or a substitute for professional review.",
+      "metrics": [
+        [
+          "3 / 3",
+          "synthetic cases correct"
+        ],
+        [
+          "Weekly",
+          "regulatory change check"
+        ]
+      ]
     },
     "images": []
   },
