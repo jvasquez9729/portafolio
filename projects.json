@@ -163,6 +163,7 @@
   },
   {
     "id": "D",
+    "link": "https://contia-saas.duckdns.org/",
     "category": "SaaS / MULTI-TENANT",
     "diagram": "contia-arquitectura",
     "stack": [
@@ -214,7 +215,7 @@
     "images": [
       "contia-inicio.webp",
       "contia-documentacion.webp",
-      "contia-landing-completa.webp"
+      "contia-flujo-producto.webp"
     ]
   },
   {

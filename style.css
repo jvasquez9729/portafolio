@@ -7,3 +7,6 @@
 .small-card{min-width:0}.project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:700px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.small-card .status{white-space:normal}.small-card .case-meta{overflow-wrap:anywhere}.small-card .card-bottom{gap:7px}}
 @media(max-width:420px){.project-grid{grid-template-columns:1fr}.small-card:first-child{grid-column:auto}.small-card{min-height:215px}.small-card h3{overflow-wrap:anywhere}.hero .eyebrow{letter-spacing:.08em;font-size:9px}.flow-core{width:230px;padding:22px}.flow-core h2{font-size:27px}}
 .diagram-scroll{overflow-x:auto;margin:20px 0;border:1px solid var(--line)}#caseContent .diagram-scroll .diagram-full{display:block;margin:0;border:0}@media(max-width:700px){#caseContent .diagram-scroll .diagram-full{min-width:720px}}
+.case-link{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin:18px 0 0}
+.case-link a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.case-link span{font-size:13px;color:var(--muted)}
